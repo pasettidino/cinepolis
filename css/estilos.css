@@ -1,0 +1,172 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+.header {
+    display: grid;
+}
+
+.header li {
+    text-transform: uppercase;
+    background-color: rgb(196, 68, 18);
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: white;
+    margin: 30px;
+    text-align: center;
+    list-style-type: none;
+}
+
+body h1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+body h2 {
+    color: white;
+    text-align: center;
+}
+
+.estrenos {
+    display: grid;
+    text-align: center;
+    color: white;
+    align-items: center;
+    margin: 20px;
+}   
+
+.estrenos__titulo {
+    text-align: center;
+    color: white;
+}
+
+.cartelera {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+
+.cartelera__titulo {
+    color: white;
+    text-align: center;
+}
+
+.promociones {
+    display: grid;
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+
+.footer {
+    display: grid;
+    text-align: center;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.contenido {
+    display: grid;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media(min-width:800px) {
+
+    .estrenos {
+        grid-template-areas: 
+        "drstrange thenortman"
+        "animalesfantasticos elvis";
+    }
+
+    .estreno1 {
+        grid-area: drstrange;
+    }
+    .estreno2 {
+        grid-area: thenortman;
+    }
+    .estreno3 {
+        grid-area: animalesfantasticos;
+    }
+    .estreno4 {
+        grid-area: elvis;
+    }
+
+    .cartelera {
+        grid-template-areas: 
+        "reyleon ironman"
+        "bluevelvet pulpfiction";
+    }
+
+    .pelicula1 {
+        grid-area: reyleon;
+    }
+    .pelicula2 {
+        grid-area: ironman;
+    }
+    .pelicula3 {
+        grid-area: bluevelvet;
+    }
+    .pelicula4 {
+        grid-area: pulpfiction;
+    }
+
+    .footer {
+        grid-template-columns: 33% 33% 33%;
+        justify-content: space-around;
+        align-items: baseline;
+        justify-items: stretch;
+    }
+}
+
+@media (min-width:1200px) {
+
+    .estrenos {
+        grid-template-areas: 
+        "drstrange thenortman" 
+        "animalesfantasticos elvis";
+        align-items: center;
+    }   
+
+    .estreno1 {
+        grid-area: drstrange;
+    }
+    .estreno2 {
+        grid-area: thenortman;
+    }
+    .estreno3 {
+        grid-area: animalesfantasticos;
+    }
+    .estreno4 {
+        grid-area: elvis;
+    }
+    
+    .cartelera {
+        grid-template-areas: 
+        "reyleon ironman bluevelvet pulpfiction"
+    }
+    
+    .cartelera__titulo {
+        color: white;
+        text-align: center;
+    }
+    
+    .footer {
+        grid-template-columns: 33% 33% 33%;
+        justify-content: space-around;
+        align-items: baseline;
+        justify-items: stretch;
+    }
+
+    .contenido {
+        align-items: center;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Entradas</li>
+                <li>Promociones</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+<div class="contenido">
+    <form action="#">
+        <fieldset>
+            <legend>Contacto</legend>
+
+            <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+            </div>
+            
+            <div>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" placeholder="Ingrese su apellido" required>
+            </div>
+            
+            <div>
+            <label for="celular">Celular</label>
+            <input type="number" name="celular" placeholder="Ingrese su celular" required>
+            </div>
+            
+            <div>
+            <label for="correo">Correo electronico</label>
+            <input type="email" name="correo" placeholder="Ingrese su correo" required>
+            </div>
+            
+            <div>
+            <label for="motivo">Motivo de consulta</label>
+                <select name="Motivo de consulta" id="">
+                <option value=""> Selecciona una opcion</option>
+                <option value="entradas">Entradas</option>
+                <option value="funciones">Funciones</option>
+                <option value="salas">Salas</option>
+                <option value="combos">Combos</option>
+            </select>
+            </div>
+            
+            <div>
+            <label for="consulta">Consulta</label>
+
+            <textarea name="consulta" id="" cols="30" rows="10" minlength="50" maxlength="300"></textarea>
+            </div>
+            <div>
+            <input type="submit" value="Enviar formulario">
+            <input type="reset" value="Limpiar formulario">
+        </div>
+        
+        </fieldset>
+    </form>
+</div>
+
+<footer>
+    <div class="footer">
+
+        <div>
+        <img src="/fotos/instagram.png" alt="Instagram" width="50px">
+        <h3>movieland</h3>
+        </div>
+      
+        <div>
+        <img src="/fotos/twitter.png" alt="Twitter" width="50px">
+        <h3>movieland_arg</h3>
+        </div>
+
+        <div>
+        <img src="/fotos/facebook.png" alt="Facebook" width="50px">
+        <h3>Movieland</h3>
+        </div>
+        
+    </div>
+    </footer>
+    
+</body>
+</html>
