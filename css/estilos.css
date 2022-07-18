@@ -18,6 +18,10 @@ body {
     list-style-type: none;
 }
 
+.header li:hover{
+    background-color: blueviolet;
+}
+
 body h1 {
     color: white;
     text-align: center;
@@ -118,7 +122,7 @@ body h2 {
     .pelicula4 {
         grid-area: pulpfiction;
     }
-
+    
     .footer {
         grid-template-columns: 33% 33% 33%;
         justify-content: space-around;
