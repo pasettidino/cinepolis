@@ -3,45 +3,25 @@ body {
     background-color: black;
 }
 
-.header {
-    display: grid;
+.nav__color{
+    background-color:goldenrod;
 }
 
-.header li {
-    text-transform: uppercase;
-    background-color: rgb(196, 68, 18);
-    padding: 1rem;
-    font-size: 1.3rem;
+.nav-item a{
     color: white;
-    margin: 30px;
-    text-align: center;
-    list-style-type: none;
 }
 
-.header li:hover{
-    background-color: blueviolet;
+.carrusel__alto {
+    height: 500px;
 }
 
-body h1 {
+.color__letra {
     color: white;
-    text-align: center;
     text-transform: uppercase;
 }
-
-body h2 {
-    color: white;
-    text-align: center;
-}
-
-.estrenos {
-    display: grid;
-    text-align: center;
-    color: white;
-    align-items: center;
-    margin: 20px;
-}   
 
 .estrenos__titulo {
+    padding: 20px;
     text-align: center;
     color: white;
 }
@@ -53,18 +33,31 @@ body h2 {
     text-align: center;
     color: white;
     align-items: center;
+    padding: 20px;
 }
 
 .cartelera__titulo {
     color: white;
     text-align: center;
+    padding: 20px;
+}
+
+.pelicula__titulo {
+    padding: 20px;
 }
 
 .promociones {
-    display: grid;
-    text-align: center;
-    color: white;
-    align-items: center;
+    padding: 20px;
+}
+
+.color__boton {
+    background-color: orangered;
+    border-color: orangered;
+}
+
+.color__boton:hover {
+    background-color: red;
+    border-color: red;
 }
 
 .footer {
@@ -83,26 +76,16 @@ body h2 {
     text-align: center;
 }
 
+.formulario {
+    padding: 20px;
+}
+
+.color__formulario {
+    color: white;
+}
+
+
 @media(min-width:800px) {
-
-    .estrenos {
-        grid-template-areas: 
-        "drstrange thenortman"
-        "animalesfantasticos elvis";
-    }
-
-    .estreno1 {
-        grid-area: drstrange;
-    }
-    .estreno2 {
-        grid-area: thenortman;
-    }
-    .estreno3 {
-        grid-area: animalesfantasticos;
-    }
-    .estreno4 {
-        grid-area: elvis;
-    }
 
     .cartelera {
         grid-template-areas: 
@@ -132,26 +115,6 @@ body h2 {
 }
 
 @media (min-width:1200px) {
-
-    .estrenos {
-        grid-template-areas: 
-        "drstrange thenortman" 
-        "animalesfantasticos elvis";
-        align-items: center;
-    }   
-
-    .estreno1 {
-        grid-area: drstrange;
-    }
-    .estreno2 {
-        grid-area: thenortman;
-    }
-    .estreno3 {
-        grid-area: animalesfantasticos;
-    }
-    .estreno4 {
-        grid-area: elvis;
-    }
     
     .cartelera {
         grid-template-areas: 
@@ -170,7 +133,4 @@ body h2 {
         justify-items: stretch;
     }
 
-    .contenido {
-        align-items: center;
-    }
 }
