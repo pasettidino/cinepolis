@@ -1,0 +1,119 @@
+@import "variables";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+.nav__color{
+    background-color: $color-page;
+}
+
+.carrusel__alto {
+    height: 500px;
+}
+
+.estrenos__titulo {
+    padding: 20px;
+    text-align: center;
+    color: $color-text;
+}
+
+.color__letra {
+    color: $color-text;
+    text-transform: uppercase;
+}
+
+
+.cartelera {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    text-align: center;
+    color: $color-text;
+    align-items: center;
+    padding: 20px;
+    &:__titulo {
+        color: $color-text;
+        text-align: center;
+        padding: 20px;
+    }
+    &:__pelicula {
+        padding: 20px;
+    }
+}
+
+.color__boton {
+    background-color: $color-page;
+    border-color: $color-page;
+    &:hover {
+        background-color: red;
+        border-color: red;
+    }
+}
+
+.formulario {
+    padding: 20px;
+    &:__color {
+        color: $color-text;
+    }
+}
+
+.footer {
+    display: grid;
+    text-align: center;
+    color: $color-text;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+
+@media(min-width:800px) {
+
+    .cartelera {
+        grid-template-areas: 
+        "reyleon ironman"
+        "bluevelvet pulpfiction";
+    }
+
+    .pelicula1 {
+        grid-area: reyleon;
+    }
+    .pelicula2 {
+        grid-area: ironman;
+    }
+    .pelicula3 {
+        grid-area: bluevelvet;
+    }
+    .pelicula4 {
+        grid-area: pulpfiction;
+    }
+    
+    .footer {
+        grid-template-columns: 33% 33% 33%;
+        justify-content: space-around;
+        align-items: baseline;
+        justify-items: stretch;
+    }
+}
+
+@media (min-width:1200px) {
+    
+    .cartelera {
+        grid-template-areas: 
+        "reyleon ironman bluevelvet pulpfiction";
+        &__titulo {
+            color: $color-text;
+            text-align: center;
+        }
+    }
+    
+    .footer {
+        grid-template-columns: 33% 33% 33%;
+        justify-content: space-around;
+        align-items: baseline;
+        justify-items: stretch;
+    }
+
+}

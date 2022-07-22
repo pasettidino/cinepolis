@@ -1,136 +1,82 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: black;
-}
+  font-family: 'Poppins', sans-serif;
+  background-color: black; }
 
-.nav__color{
-    background-color:goldenrod;
-}
-
-.nav-item a{
-    color: white;
-}
+.nav__color {
+  background-color: goldenrod; }
 
 .carrusel__alto {
-    height: 500px;
-}
-
-.color__letra {
-    color: white;
-    text-transform: uppercase;
-}
+  height: 500px; }
 
 .estrenos__titulo {
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
+  padding: 20px;
+  text-align: center;
+  color: white; }
+
+.color__letra {
+  color: white;
+  text-transform: uppercase; }
 
 .cartelera {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    text-align: center;
-    color: white;
-    align-items: center;
-    padding: 20px;
-}
-
-.cartelera__titulo {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  text-align: center;
+  color: white;
+  align-items: center;
+  padding: 20px; }
+  .cartelera:__titulo {
     color: white;
     text-align: center;
-    padding: 20px;
-}
-
-.pelicula__titulo {
-    padding: 20px;
-}
-
-.promociones {
-    padding: 20px;
-}
+    padding: 20px; }
+  .cartelera:__pelicula {
+    padding: 20px; }
 
 .color__boton {
-    background-color: orangered;
-    border-color: orangered;
-}
-
-.color__boton:hover {
+  background-color: goldenrod;
+  border-color: goldenrod; }
+  .color__boton:hover {
     background-color: red;
-    border-color: red;
-}
-
-.footer {
-    display: grid;
-    text-align: center;
-    color: white;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-}
-
-.contenido {
-    display: grid;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+    border-color: red; }
 
 .formulario {
-    padding: 20px;
-}
+  padding: 20px; }
+  .formulario:__color {
+    color: white; }
 
-.color__formulario {
-    color: white;
-}
+.footer {
+  display: grid;
+  text-align: center;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px; }
 
+@media (min-width: 800px) {
+  .cartelera {
+    grid-template-areas: "reyleon ironman" "bluevelvet pulpfiction"; }
+  .pelicula1 {
+    grid-area: reyleon; }
+  .pelicula2 {
+    grid-area: ironman; }
+  .pelicula3 {
+    grid-area: bluevelvet; }
+  .pelicula4 {
+    grid-area: pulpfiction; }
+  .footer {
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-around;
+    align-items: baseline;
+    justify-items: stretch; } }
 
-@media(min-width:800px) {
-
-    .cartelera {
-        grid-template-areas: 
-        "reyleon ironman"
-        "bluevelvet pulpfiction";
-    }
-
-    .pelicula1 {
-        grid-area: reyleon;
-    }
-    .pelicula2 {
-        grid-area: ironman;
-    }
-    .pelicula3 {
-        grid-area: bluevelvet;
-    }
-    .pelicula4 {
-        grid-area: pulpfiction;
-    }
-    
-    .footer {
-        grid-template-columns: 33% 33% 33%;
-        justify-content: space-around;
-        align-items: baseline;
-        justify-items: stretch;
-    }
-}
-
-@media (min-width:1200px) {
-    
-    .cartelera {
-        grid-template-areas: 
-        "reyleon ironman bluevelvet pulpfiction"
-    }
-    
+@media (min-width: 1200px) {
+  .cartelera {
+    grid-template-areas: "reyleon ironman bluevelvet pulpfiction"; }
     .cartelera__titulo {
-        color: white;
-        text-align: center;
-    }
-    
-    .footer {
-        grid-template-columns: 33% 33% 33%;
-        justify-content: space-around;
-        align-items: baseline;
-        justify-items: stretch;
-    }
-
-}
+      color: white;
+      text-align: center; }
+  .footer {
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-around;
+    align-items: baseline;
+    justify-items: stretch; } }
