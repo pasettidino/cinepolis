@@ -8,28 +8,25 @@ body {
 .carrusel__alto {
   height: 500px; }
 
-.estrenos__titulo {
+.estrenos__titulo, .color__letra {
   padding: 20px;
   text-align: center;
   color: white; }
 
 .color__letra {
-  color: white;
   text-transform: uppercase; }
 
-.cartelera {
-  width: 100%;
-  height: 100%;
+.cartelera, .footer {
   display: grid;
   text-align: center;
   color: white;
   align-items: center;
   padding: 20px; }
-  .cartelera:__titulo {
+  .cartelera:__titulo, .footer:__titulo {
     color: white;
     text-align: center;
     padding: 20px; }
-  .cartelera:__pelicula {
+  .cartelera:__pelicula, .footer:__pelicula {
     padding: 20px; }
 
 .color__boton {
@@ -45,15 +42,10 @@ body {
     color: white; }
 
 .footer {
-  display: grid;
-  text-align: center;
-  color: white;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px; }
+  justify-content: space-around; }
 
 @media (min-width: 800px) {
-  .cartelera {
+  .cartelera, .footer {
     grid-template-areas: "reyleon ironman" "bluevelvet pulpfiction"; }
   .pelicula1 {
     grid-area: reyleon; }
@@ -70,7 +62,7 @@ body {
     justify-items: stretch; } }
 
 @media (min-width: 1200px) {
-  .cartelera {
+  .cartelera, .footer {
     grid-template-areas: "reyleon ironman bluevelvet pulpfiction"; }
     .cartelera__titulo {
       color: white;

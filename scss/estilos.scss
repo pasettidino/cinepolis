@@ -20,14 +20,11 @@ body {
 }
 
 .color__letra {
-    color: $color-text;
+    @extend .estrenos__titulo;
     text-transform: uppercase;
 }
 
-
 .cartelera {
-    width: 100%;
-    height: 100%;
     display: grid;
     text-align: center;
     color: $color-text;
@@ -60,12 +57,8 @@ body {
 }
 
 .footer {
-    display: grid;
-    text-align: center;
-    color: $color-text;
+    @extend .cartelera;
     justify-content: space-around;
-    align-items: center;
-    padding: 20px;
 }
 
 
