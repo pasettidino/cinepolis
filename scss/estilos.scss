@@ -40,6 +40,33 @@ body {
     }
 }
 
+.noticias {
+    display: grid;
+    text-align: center;
+    color: $color-text;
+    align-items: center;
+    padding: 20px;
+    grid-template-areas: 
+    "hotd dbs"
+    "bcs nope";
+}
+
+.noticia1 {
+    grid-area: hotd;
+}
+
+.noticia2 {
+    grid-area: dbs;
+}
+
+.noticia3 {
+    grid-area: bcs;
+}
+
+noticia4 {
+    grid-area: nope;
+}
+
 .color__boton {
     background-color: $color-page;
     border-color: $color-page;
