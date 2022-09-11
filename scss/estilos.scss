@@ -30,12 +30,12 @@ body {
     color: $color-text;
     align-items: center;
     padding: 20px;
-    &:__titulo {
+    &__titulo {
         color: $color-text;
         text-align: center;
         padding: 20px;
     }
-    &:__pelicula {
+    &__pelicula {
         padding: 20px;
     }
 }
@@ -43,7 +43,7 @@ body {
 .color__boton {
     background-color: $color-page;
     border-color: $color-page;
-    &:hover {
+    &hover {
         background-color: red;
         border-color: red;
     }
@@ -51,16 +51,12 @@ body {
 
 .formulario {
     padding: 20px;
-    &:__color {
-        color: $color-text;
-    }
 }
 
 .footer {
     @extend .cartelera;
     justify-content: space-around;
 }
-
 
 @media(min-width:800px) {
 
@@ -82,7 +78,11 @@ body {
     .pelicula4 {
         grid-area: pulpfiction;
     }
-    
+
+    .carrusel__alto {
+        height: 100px;
+    }
+
     .footer {
         grid-template-columns: 33% 33% 33%;
         justify-content: space-around;
@@ -102,6 +102,10 @@ body {
         }
     }
     
+    .carrusel__alto {
+        height: 300px;
+    }
+
     .footer {
         grid-template-columns: 33% 33% 33%;
         justify-content: space-around;

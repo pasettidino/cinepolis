@@ -22,24 +22,22 @@ body {
   color: white;
   align-items: center;
   padding: 20px; }
-  .cartelera:__titulo, .footer:__titulo {
+  .cartelera__titulo {
     color: white;
     text-align: center;
     padding: 20px; }
-  .cartelera:__pelicula, .footer:__pelicula {
+  .cartelera__pelicula {
     padding: 20px; }
 
 .color__boton {
   background-color: goldenrod;
   border-color: goldenrod; }
-  .color__boton:hover {
+  .color__botonhover {
     background-color: red;
     border-color: red; }
 
 .formulario {
   padding: 20px; }
-  .formulario:__color {
-    color: white; }
 
 .footer {
   justify-content: space-around; }
@@ -55,6 +53,8 @@ body {
     grid-area: bluevelvet; }
   .pelicula4 {
     grid-area: pulpfiction; }
+  .carrusel__alto {
+    height: 100px; }
   .footer {
     grid-template-columns: 33% 33% 33%;
     justify-content: space-around;
@@ -67,6 +67,8 @@ body {
     .cartelera__titulo {
       color: white;
       text-align: center; }
+  .carrusel__alto {
+    height: 300px; }
   .footer {
     grid-template-columns: 33% 33% 33%;
     justify-content: space-around;
